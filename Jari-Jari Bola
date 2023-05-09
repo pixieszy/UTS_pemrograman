@@ -1,22 +1,18 @@
 import java.util.Scanner;
 
-public class BilanganBulat {
+public class JariJariBola {
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     
-    int angka1, angka2, output;
+    final double n = 3.14;
     
-    System.out.print("angka pertama : ");
-    angka1 = in.nextInt();
-    System.out.print("angka kedua : ");
-    angka2 = in.nextInt();
+    float volume;
+    int r;
     
-    if (angka1 == angka2) {
-      output = angka1 + angka2;
-    } else {
-      output = angka1 * angka2;
-    }
+    System.out.print("Input jari-jari bola : ");
+    r = in.nextInt();
     
-    System.out.println("Output : " + output);
+    volume = (float) ((4 * n) / 3 * (Math.pow(r,3)));
+    System.out.println("Volume bola adalah : " + volume);
   }
 } 
